@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
     ),
     home: WhatsAppHome(),
     debugShowCheckedModeBanner: false,
+    debugShowMaterialGrid: false,
     );
   }
 }
