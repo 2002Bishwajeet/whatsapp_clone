@@ -45,7 +45,7 @@ List<ChatModel> dummyData = [
     avatarUrl: "assets/images/interviewer.jpg",
   ),
    ChatModel(
-    name: "Priya",
+    name: "Pia",
     message: "Ghadi Chori ho gyi meri",
     time: "09:00 am",
     avatarUrl: "assets/images/priya.jpg",

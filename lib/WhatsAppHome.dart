@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:whatsapp_clone/Model/Popup_menu.dart';
 import 'Pages/Calls_screen.dart';
 import 'Pages/Camera_screen.dart';
 import 'Pages/Chat_screen.dart';
@@ -19,8 +19,9 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
     super.initState();
     _tabController = new TabController(length: 4, vsync: this, initialIndex: 1);
   }
-
+ 
   Widget build(BuildContext context) {
+    final int _cameraTapIndex = 0;
     return Scaffold(
       appBar: AppBar(
        
@@ -41,26 +42,51 @@ class _WhatsAppHomeState extends State<WhatsAppHome>
               text: "CALLS",
             ),
           ],
+          
         ),
-        actions: <Widget>[Icon(Icons.search),Padding(padding: const EdgeInsets.symmetric(horizontal: 5.0)),Icon(Icons.more_vert) ],
+        
+        actions: <Widget>[ IconButton(icon: Icon(Icons.search), onPressed: () {}),
+            // IconButton(icon: Icon(Icons.more_vert), onPressed: () {}), 
+            popupMenuButton(),
+            ],
       ),
       body: TabBarView(
         controller: _tabController,
         children: <Widget>[
-          CameraScreen(),
+          WillPopScope(
+          // ignore: missing_return
+          onWillPop: () {
+            // shift to the right-handed-side tap;
+            _tabController.animateTo(_cameraTapIndex + 1);
+          },
+          child: CameraScreen(),
+          ),
+          
           ChatScreen(),
           StatusScreen(),
           CallScreen(),
         ],
       ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).accentColor,
-        child: Icon(
-          Icons.message_outlined,
-          color: Colors.white,
-        ),
-        onPressed: () => print("Open Chats"),
+      floatingActionButton: Floating_button(),
+    );
+  }
+}
+
+// ignore: camel_case_types
+class Floating_button extends StatelessWidget {
+  const Floating_button({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return FloatingActionButton(
+      backgroundColor: Theme.of(context).accentColor,
+      child: Icon(
+        Icons.message_outlined,
+        color: Colors.white,
       ),
+      onPressed: () => print("Open Chats"),
     );
   }
 }
