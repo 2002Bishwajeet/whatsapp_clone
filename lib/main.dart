@@ -21,6 +21,7 @@ class MyApp extends StatelessWidget {
       indicatorColor: Colors.white,
       primaryColorDark: Color(0xFF128C7E),
       accentColor: Color.fromRGBO(37 ,211, 102,-240),
+      cardColor: Color.fromRGBO(18, 140, 126,-240),
       fontFamily: GoogleFonts.lato().fontFamily,
       primaryIconTheme: IconThemeData(
           color: Colors.white,

@@ -28,7 +28,7 @@ List<ChatModel> dummyData = [
   ),
   ChatModel(
     name: "Chatur",
-    message: "Mere Upar Meme banana band kar",
+    message: "Jitna hasna hai has le",
     time: "10:15 am",
     avatarUrl: "assets/images/chatur.jpg",
   ),
