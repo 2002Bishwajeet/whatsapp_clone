@@ -1,16 +1,21 @@
 # whatsapp_clone
 
-A new Flutter project.
+So , This repo is basically a clone of WhatsApp made using Flutter
 
-## Getting Started
+## Steps to Run in your Local machine
 
-This project is a starting point for a Flutter application.
+Make sure you have Flutter installed up and running in System
 
-A few resources to get you started if this is your first Flutter project:
+If you are using Flutter for First Time 
+- Goto https://flutter.dev/docs/get-started/
+They Provide excellent documentation on setting it up on your machine
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+If You want to just see how it looks , I have attached an apk file (Note: it's not stable so may have lag or glitches)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Contributing to this Repo
+
+Am always open for such stuffs , go ahead and raise an issue first if you want to add major feature.
+
+
+Starring this repo would make my day
+
