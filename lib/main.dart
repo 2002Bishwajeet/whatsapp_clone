@@ -15,9 +15,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     title: "WhatApp" ,
     theme: new ThemeData(
+      backgroundColor: Color(0xff075E54),
       primaryColor: Color(0xff075E54),
       accentColor: Color.fromRGBO(37 ,211, 102,-240),
-      fontFamily: GoogleFonts.openSans().fontFamily,
+      fontFamily: GoogleFonts.lato().fontFamily,
       
     
     ),
